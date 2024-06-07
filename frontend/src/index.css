@@ -1,0 +1,253 @@
+* {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  height: 100vh;
+}
+
+body {
+  background-color: #252525;
+  color: #fff;
+}
+
+.sidebar {
+  width: 272px;
+  background-color: #33074F;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar h2 {
+  color: white;
+}
+
+.acmy {
+  background-color: #EBE6ED1A;
+  text-align: center;
+  padding: 1px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.dashboard {
+  margin-top: 20px;
+  background-color: #EBE6ED1A;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 20px;
+  background-color: white;
+}
+
+.smain {
+  margin-bottom: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  background-color: white;
+  padding: 20px;
+}
+
+.title {
+  text-align: left;
+  font-size: 1.5rem;
+  color: black;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.welcome h1 {
+  text-align: left;
+  font-size: 1.2rem;
+  color: black;
+  background-color: #ffffff;
+  width: 100%;
+}
+
+.welcome p {
+  text-align: left;
+  font-size: .8rem;
+  color: black;
+  background-color: #ffffff;
+}
+
+.welcome a {
+  text-align: left;
+  font-size: .8rem;
+  color: rgb(255, 85, 113);
+  background-color: #ffffff;
+}
+
+.input_holder {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+input,
+button {
+  padding: 10px 20px;
+  background-color: #696969;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+
+input {
+  width: 300px;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #4d4d4d;
+}
+
+.list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.toDo {
+  background-color: #696969;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.toDo.completed {
+  text-decoration: line-through;
+  background-color: #d3d3d3;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+}
+
+.icon:hover {
+  cursor: pointer;
+  color: #cfcfcf;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #0000006c;
+  display: grid;
+  place-items: center;
+}
+
+.popup {
+  position: relative;
+  background-color: #696969;
+  width: 400px;
+  padding: 10px;
+}
+
+.cross {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.cross:hover {
+  color: #c4c4c4;
+}
+
+.popup h1 {
+  text-align: center;
+  font-weight: 500;
+}
+
+.popup__input_holder {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+.popup__input_holder input,
+.popup__input_holder button {
+  background-color: #fff;
+  color: #000;
+}
+
+.popup__input_holder input::placeholder {
+  color: #383838;
+}
+
+.popup__input_holder button:hover {
+  background-color: #c4c4c4;
+}
+
+.rightbar {
+  width: 440px;
+  background-color: #D3D3D3; /* Light gray color */
+  color: black; /* Ensure text is visible on the light gray background */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.rightbar h2 {
+  color: black;
+}
+
+.activity-table,
+.task-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  color: black;
+}
+
+.activity-table th,
+.activity-table td,
+.task-table th,
+.task-table td {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.activity-table th,
+.task-table th {
+  background-color: #f0f0f0;
+}
+
+.activity-table tbody tr:nth-child(odd),
+.task-table tbody tr:nth-child(odd) {
+  background-color: #e0e0e0;
+}
